@@ -1,5 +1,5 @@
 .button {
-    font-family: 'Open Sans';
+    @extend %font-prim;
     font-style: normal;
     font-weight: 600;
     font-size: 1.6rem;
@@ -28,3 +28,13 @@
     }
 }
 
+.link-button {
+    color: $color-primary;
+    @extend %font-add;
+    display: inline-flex;
+    align-items: center;
+}
+
+.link-button__text {
+    margin-left: 9px;
+}
