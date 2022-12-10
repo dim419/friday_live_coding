@@ -430,6 +430,14 @@ h1 {
   font-weight: bold;
   line-height: 5.4rem;
 }
+@media (max-width: 415px) {
+  h1 {
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 4.2rem;
+  }
+}
 
 h2 {
   font-size: 3.4rem;
@@ -501,6 +509,14 @@ h5 {
 
 .link-button__text {
   margin-left: 9px;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo-object {
+  width: 160px;
 }
 
 .logo-svg:hover .logo-path {
@@ -632,7 +648,7 @@ h5 {
 }
 @media (max-width: 768px) {
   .hamburger {
-    display: block;
+    display: inline-block;
   }
 }
 .hamburger::before {
@@ -676,13 +692,21 @@ h5 {
   }
 }
 
+.header__logo-line {
+  display: flex;
+}
+
 .header__buttons > .button {
   margin-left: 14px;
 }
-
 .header__buttons > .button:first-child {
   margin-left: 14px;
   margin-left: 0;
+}
+@media (max-width: 415px) {
+  .header__buttons {
+    display: none;
+  }
 }
 
 .layout-4-column {
@@ -824,6 +848,7 @@ h5 {
 
 .promo {
   padding: 30px 0;
+  overflow: hidden;
 }
 
 .promo__wrapper {
